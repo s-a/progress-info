@@ -23,6 +23,7 @@ var index = 0;
 var interval = setInterval(function () {
     index++
     if (index % checkpointSize === 0){
+     	console.log(progressInfo.info(index))
         progressInfo.checkpoint();
         if (index === total){
             clearInterval(interval)
