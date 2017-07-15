@@ -1,4 +1,4 @@
-# progress-info [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Donate](http://s-a.github.io/donate/donate.svg)](http://s-a.github.io/donate/)
+# progress-info [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Donate](http://s-a.github.io/donate/donate.svg)](http://s-a.github.io/donate/) [![Coverage Status](https://coveralls.io/repos/github/s-a/progress-info/badge.svg?branch=master)](https://coveralls.io/github/s-a/progress-info?branch=master)
 
 > determine long running progress status.
 
