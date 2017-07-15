@@ -55,12 +55,15 @@ checkpoint: 17:02:53 (100.00%)  T -0.00 seconds (t 0.56 seconds/10 docs)        
 
 ### Methods
 
--   `ProgressInfo.rawTimeString()` returns a time in seconds as human readble string.
--   `ProgressInfo.estimatedTime()` returns an estimated time in seconds as human readble string.
--   `ProgressInfo.percent()` returns an percent value as decimal.
--   `ProgressInfo.index()` returns an string in form of [current document] / [total documents].
--   `ProgressInfo.docsLeft()` returns a counter integer of forthcoming documents.
--   `checkpoint()` resets the current time for the next measurement.
+-   `ProgressInfo.rawTimeString(milliseconds)` returns a time in seconds as human readble string.
+-   `ProgressInfo.estimatedTime(documentIndex)` returns an estimated time in seconds as human readble string.
+-   `ProgressInfo.percent(documentIndex)` returns an percent value as decimal.
+-   `ProgressInfo.index(documentIndex)` returns an string in form of [current document] / [total documents].
+-   `ProgressInfo.docsLeft(documentIndex)` returns a counter integer of forthcoming documents.
+-   `ProgressInfo.checkpoint()` resets the current time for the next measurement.
+-   `ProgressInfo.time()` returns a short time string of current time.
+-   `ProgressInfo.tx()` returns a short time string of past time.
+-   `ProgressInfo.info(documentIndex)` returns a full information string of current progress like in the usage example above.
 
 ## License
 
