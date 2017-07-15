@@ -19,6 +19,7 @@
     "percent"
   ],
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "^4.2.0",
     "mocha": "^3.4.2",
     "nyc": "^11.0.3",
