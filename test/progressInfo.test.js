@@ -1,13 +1,13 @@
 /* Const should =  */
-require('should');
-const ProgressInfo = require('./../lib/index.js');
+require("should");
+var ProgressInfo = require("./../lib/index.js");
 
 var total = 100
 var checkpointSize = 10
 var progressInfo = new ProgressInfo(total, checkpointSize);
 var index = 0;
-describe('progressInfo', function () {
-  it('has a test', function (done) {
+describe("progressInfo", function () {
+  it("has a test", function (done) {
 
     this.timeout(10000)
 
