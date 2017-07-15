@@ -1,0 +1,40 @@
+{
+  "name": "progress-info",
+  "version": "0.0.0",
+  "description": "determine long running progress status.",
+  "homepage": "https://github.com/s-a/progress-info",
+  "author": {
+    "name": "Stephan Ahlf",
+    "email": "stephan.ahlf@googlemail.com",
+    "url": "https://github.com/s-a"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "status",
+    "estimated time",
+    "time",
+    "percent"
+  ],
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "should": "^11.2.1"
+  },
+  "scripts": {
+    "lcov-file": "node node_modules/nyc/bin/nyc.js report --reporter=lcov",
+    "coverage": "node node_modules/nyc/bin/nyc.js --reporter=html --reporter=text mocha && npm run lcov-file",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/coveralls/bin/coveralls.js",
+    "eslint": "node node_modules/eslint/bin/eslint.js ./lib",
+    "debug": "iron-node node_modules/mocha/bin/_mocha",
+    "prepublish": "npm test",
+    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
+    "mocha": "node node_modules/mocha/bin/_mocha",
+    "test": "npm run eslint && npm run coverage"
+  },
+  "repository": "s-a/progress-info",
+  "license": "MIT"
+}
